@@ -9,3 +9,14 @@ D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.csproj.CoreCompileInp
 D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.csproj.CopyComplete
 D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.exe
 D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.pdb
+C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\bin\Debug\ECSystem.exe.config
+C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\bin\Debug\ECSystem.exe
+C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\bin\Debug\ECSystem.pdb
+C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\bin\Debug\MaterialSkin.dll
+C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.csprojAssemblyReference.cache
+C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.Properties.Resources.resources
+C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.csproj.GenerateResource.cache
+C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.csproj.CopyComplete
+C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.exe
+C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.pdb
