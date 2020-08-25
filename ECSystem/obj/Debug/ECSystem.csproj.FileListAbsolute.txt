@@ -1,0 +1,11 @@
+D:\Project\C#\Winform\ECSystem\ECSystem\bin\Debug\ECSystem.exe.config
+D:\Project\C#\Winform\ECSystem\ECSystem\bin\Debug\ECSystem.exe
+D:\Project\C#\Winform\ECSystem\ECSystem\bin\Debug\ECSystem.pdb
+D:\Project\C#\Winform\ECSystem\ECSystem\bin\Debug\MaterialSkin.dll
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.csprojAssemblyReference.cache
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.Properties.Resources.resources
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.csproj.GenerateResource.cache
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.csproj.CoreCompileInputs.cache
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.csproj.CopyComplete
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.exe
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.pdb
