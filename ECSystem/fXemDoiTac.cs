@@ -13,10 +13,12 @@ using MaterialSkin.Controls;
 
 namespace ECSystem
 {
-    public partial class fQuanLyMatHang : MaterialForm
+    public partial class fXemDoiTac : MaterialForm
     {
-        public fQuanLyMatHang()
+        public fXemDoiTac()
         {
+            InitializeComponent();
+
             InitializeComponent();
 
             var materialSkinManager = MaterialSkinManager.Instance;
@@ -24,19 +26,6 @@ namespace ECSystem
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(
                 Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-        }
-
-        private void btnNhapHang_Click(object sender, EventArgs e)
-        {
-            fNhapHang form = new fNhapHang();
-            this.Hide();
-            form.ShowDialog();
-            this.Show();
-        }
-
-        private void LoaddtgvMatHang()
-        {
-
         }
     }
 }

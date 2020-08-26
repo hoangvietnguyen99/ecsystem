@@ -60,7 +60,7 @@ namespace ECSystem
                 }
                 else if (nv.ChucVu == "Quản lý quảng cáo")
                 {
-                    fQuanLyQuangCao form = new fQuanLyQuangCao();
+                    fQuanLyQuangCao form = new fQuanLyQuangCao(nv);
                     this.Hide();
                     form.ShowDialog();
                     this.Show();
