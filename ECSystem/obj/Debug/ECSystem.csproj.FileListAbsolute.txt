@@ -25,3 +25,4 @@ D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fQuanLyMatHang.resour
 D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fDangNhap.resources
 D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fBanHang.resources
 D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fQuanLyQuangCao.resources
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fXemDoiTac.resources
