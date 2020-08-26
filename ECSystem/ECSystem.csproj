@@ -49,21 +49,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\DataProvider.cs" />
-    <Compile Include="formDangNhap.cs">
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DTO\NhaCungCap.cs" />
+    <Compile Include="DTO\NhanVien.cs" />
+    <Compile Include="fNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formDangNhap.Designer.cs">
-      <DependentUpon>formDangNhap.cs</DependentUpon>
+    <Compile Include="fNhapHang.Designer.cs">
+      <DependentUpon>fNhapHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="formQuanLy.cs">
+    <Compile Include="fDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formQuanLy.Designer.cs">
-      <DependentUpon>formQuanLy.cs</DependentUpon>
+    <Compile Include="fDangNhap.Designer.cs">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuanLyMatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanLyMatHang.Designer.cs">
+      <DependentUpon>fQuanLyMatHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fNhapHang.resx">
+      <DependentUpon>fNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDangNhap.resx">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuanLyMatHang.resx">
+      <DependentUpon>fQuanLyMatHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -87,5 +105,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

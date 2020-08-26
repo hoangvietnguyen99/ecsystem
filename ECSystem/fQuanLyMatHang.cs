@@ -13,9 +13,9 @@ using MaterialSkin.Controls;
 
 namespace ECSystem
 {
-    public partial class formDangNhap : MaterialForm
+    public partial class fQuanLyMatHang : MaterialForm
     {
-        public formDangNhap()
+        public fQuanLyMatHang()
         {
             InitializeComponent();
 
@@ -26,32 +26,9 @@ namespace ECSystem
                 Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnNhapHang_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void formDangNhap_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Are you sure to exit?", "Alert", MessageBoxButtons.OKCancel) != DialogResult.OK)
-            {
-                e.Cancel = true;
-            }
-        }
-
-        private void buttonExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void buttonLogin_Click(object sender, EventArgs e)
-        {
-            formQuanLy form = new formQuanLy();
+            fNhapHang form = new fNhapHang();
             this.Hide();
             form.ShowDialog();
             this.Show();
