@@ -53,6 +53,12 @@
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DTO\NhaCungCap.cs" />
     <Compile Include="DTO\NhanVien.cs" />
+    <Compile Include="fBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBanHang.Designer.cs">
+      <DependentUpon>fBanHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="fNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,8 +77,17 @@
     <Compile Include="fQuanLyMatHang.Designer.cs">
       <DependentUpon>fQuanLyMatHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="fQuanLyQuangCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanLyQuangCao.Designer.cs">
+      <DependentUpon>fQuanLyQuangCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fBanHang.resx">
+      <DependentUpon>fBanHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fNhapHang.resx">
       <DependentUpon>fNhapHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fQuanLyMatHang.resx">
       <DependentUpon>fQuanLyMatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuanLyQuangCao.resx">
+      <DependentUpon>fQuanLyQuangCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

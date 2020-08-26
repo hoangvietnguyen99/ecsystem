@@ -23,3 +23,5 @@ C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.pdb
 D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fNhapHang.resources
 D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fQuanLyMatHang.resources
 D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fDangNhap.resources
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fBanHang.resources
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fQuanLyQuangCao.resources
