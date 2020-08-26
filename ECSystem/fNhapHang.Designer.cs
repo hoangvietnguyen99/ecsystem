@@ -1,6 +1,6 @@
 ﻿namespace ECSystem
 {
-    partial class formQuanLy
+    partial class fNhapHang
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // formQuanLy
+            // fNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "formQuanLy";
+            this.Name = "fNhapHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Quản lý";
+            this.Text = "Nhập hàng";
             this.ResumeLayout(false);
 
         }

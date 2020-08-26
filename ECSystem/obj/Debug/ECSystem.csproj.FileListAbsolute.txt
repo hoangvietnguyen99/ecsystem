@@ -20,3 +20,6 @@ C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.csproj.CoreCompi
 C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.csproj.CopyComplete
 C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.exe
 C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.pdb
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fNhapHang.resources
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fQuanLyMatHang.resources
+D:\Project\C#\Winform\ECSystem\ECSystem\obj\Debug\ECSystem.fDangNhap.resources

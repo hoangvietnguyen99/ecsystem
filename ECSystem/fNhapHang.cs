@@ -13,9 +13,9 @@ using MaterialSkin.Controls;
 
 namespace ECSystem
 {
-    public partial class formQuanLy : MaterialForm
+    public partial class fNhapHang : MaterialForm
     {
-        public formQuanLy()
+        public fNhapHang()
         {
             InitializeComponent();
 
