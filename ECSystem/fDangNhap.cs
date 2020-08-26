@@ -29,7 +29,7 @@ namespace ECSystem
 
         private void formDangNhap_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MaterialMessageBox.Show(this, "Bạn có chắc muốn thoát không?", "Thoát chương trình", MessageBoxButtons.YesNo) != DialogResult.Yes)
+            if (MaterialMessageBox.Show(this, "Bạn có chắc muốn thoát không?", "Thoát chương trình", MessageBoxButtons.OKCancel) != DialogResult.OK)
             {
                 e.Cancel = true;
             }
@@ -50,6 +50,24 @@ namespace ECSystem
                     this.Hide();
                     form.ShowDialog();
                     this.Show();
+                }
+                else if (nv.ChucVu == "Bán hàng")
+                {
+                    fBanHang form = new fBanHang();
+                    this.Hide();
+                    form.ShowDialog();
+                    this.Show();
+                }
+                else if (nv.ChucVu == "Quản lý quảng cáo")
+                {
+                    fQuanLyQuangCao form = new fQuanLyQuangCao();
+                    this.Hide();
+                    form.ShowDialog();
+                    this.Show();
+                }
+                else
+                {
+                    MaterialMessageBox.Show(this, "Tính năng chưa phát triển.", "Thông báo", MessageBoxButtons.OK);
                 }
             }
             else
