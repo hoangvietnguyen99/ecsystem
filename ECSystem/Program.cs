@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ECSystem.BUS;
+using ECSystem.GUI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +19,7 @@ namespace ECSystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new fDangNhap());
+            Application.Exit();
         }
     }
 }

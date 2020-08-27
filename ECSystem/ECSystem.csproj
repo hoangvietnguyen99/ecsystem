@@ -49,70 +49,99 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\DoiTacBUS.cs" />
+    <Compile Include="BUS\KhachHangBUS.cs" />
+    <Compile Include="BUS\LoaiHangBUS.cs" />
+    <Compile Include="BUS\TinQuangCaoBUS.cs" />
+    <Compile Include="BUS\TinQuangCaoDoiTacBUS.cs" />
+    <Compile Include="BUS\TinQuangCaoKhachHangBUS.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DoiTacDAO.cs" />
+    <Compile Include="DAO\KhachHangDAO.cs" />
+    <Compile Include="DAO\LoaiHangDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\TinQuangCaoDAO.cs" />
-    <Compile Include="DTO\DoiTac.cs" />
-    <Compile Include="DTO\MatHang.cs" />
-    <Compile Include="DTO\NhaCungCap.cs" />
-    <Compile Include="DTO\NhanVien.cs" />
-    <Compile Include="DTO\TinQuangCao.cs" />
-    <Compile Include="fBanHang.cs">
+    <Compile Include="DAO\TinQuangCaoDoiTacDAO.cs" />
+    <Compile Include="DAO\TinQuangCaoKhachHangDAO.cs" />
+    <Compile Include="DTO\DoiTacDTO.cs" />
+    <Compile Include="DTO\KhachHangDTO.cs" />
+    <Compile Include="DTO\LoaiHangDTO.cs" />
+    <Compile Include="DTO\MatHangDTO.cs" />
+    <Compile Include="DTO\NhaCungCapDTO.cs" />
+    <Compile Include="DTO\NhanVienDTO.cs" />
+    <Compile Include="DTO\TinQuangCaoDoiTacDTO.cs" />
+    <Compile Include="DTO\TinQuangCaoDTO.cs" />
+    <Compile Include="DTO\TinQuangCaoKhachHangDTO.cs" />
+    <Compile Include="GUI\fNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fBanHang.Designer.cs">
-      <DependentUpon>fBanHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fNhapHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fNhapHang.Designer.cs">
+    <Compile Include="GUI\fNhapHang.Designer.cs">
       <DependentUpon>fNhapHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="fDangNhap.cs">
+    <Compile Include="GUI\fQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fDangNhap.Designer.cs">
-      <DependentUpon>fDangNhap.cs</DependentUpon>
+    <Compile Include="GUI\fQuanLy.Designer.cs">
+      <DependentUpon>fQuanLy.cs</DependentUpon>
     </Compile>
-    <Compile Include="fQuanLyMatHang.cs">
+    <Compile Include="GUI\fQuanLyMatHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fQuanLyMatHang.Designer.cs">
+    <Compile Include="GUI\fQuanLyMatHang.Designer.cs">
       <DependentUpon>fQuanLyMatHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="fQuanLyQuangCao.cs">
+    <Compile Include="GUI\fDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fQuanLyQuangCao.Designer.cs">
+    <Compile Include="GUI\fDangNhap.Designer.cs">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fQuanLyQuangCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fQuanLyQuangCao.Designer.cs">
       <DependentUpon>fQuanLyQuangCao.cs</DependentUpon>
     </Compile>
-    <Compile Include="fXemDoiTac.cs">
+    <Compile Include="GUI\fThemDoiTac.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fXemDoiTac.Designer.cs">
-      <DependentUpon>fXemDoiTac.cs</DependentUpon>
+    <Compile Include="GUI\fThemDoiTac.Designer.cs">
+      <DependentUpon>fThemDoiTac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fThemKhachHang.Designer.cs">
+      <DependentUpon>fThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fMaterialSkin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fMaterialSkin.Designer.cs">
+      <DependentUpon>fMaterialSkin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fBanHang.resx">
-      <DependentUpon>fBanHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fNhapHang.resx">
+    <EmbeddedResource Include="GUI\fNhapHang.resx">
       <DependentUpon>fNhapHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fDangNhap.resx">
-      <DependentUpon>fDangNhap.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\fQuanLy.resx">
+      <DependentUpon>fQuanLy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fQuanLyMatHang.resx">
+    <EmbeddedResource Include="GUI\fQuanLyMatHang.resx">
       <DependentUpon>fQuanLyMatHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fQuanLyQuangCao.resx">
+    <EmbeddedResource Include="GUI\fDangNhap.resx">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fQuanLyQuangCao.resx">
       <DependentUpon>fQuanLyQuangCao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fXemDoiTac.resx">
-      <DependentUpon>fXemDoiTac.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\fThemDoiTac.resx">
+      <DependentUpon>fThemDoiTac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fThemKhachHang.resx">
+      <DependentUpon>fThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

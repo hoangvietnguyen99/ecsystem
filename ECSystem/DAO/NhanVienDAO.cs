@@ -19,11 +19,11 @@ namespace ECSystem.DAO
             private set => instance = value;
         }
 
-        public NhanVien GetNhanVien(string username)
+        public NhanVienDTO GetNhanVien(string username)
         {
             string query = "USP_GetNhanVienByMaNV @username";
 
-            NhanVien nhanVien = null;
+            NhanVienDTO nhanVien = null;
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { username });
 
@@ -31,7 +31,7 @@ namespace ECSystem.DAO
             {
                 DataRow row = data.Rows[0];
 
-                nhanVien = new NhanVien(row);
+                nhanVien = new NhanVienDTO(row);
             }
 
             return nhanVien;

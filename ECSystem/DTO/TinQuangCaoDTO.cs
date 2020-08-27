@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ECSystem.DTO
 {
-    public class TinQuangCao
+    public class TinQuangCaoDTO
     {
         private string maTin;
 
@@ -22,7 +22,7 @@ namespace ECSystem.DTO
         public DateTime NgayLap { get => ngayLap; set => ngayLap = value; }
         public string NVDangTin { get => nVDangTin; set => nVDangTin = value; }
 
-        public TinQuangCao(string maTin, string noiDung, DateTime ngayLap, string nVDangTin)
+        public TinQuangCaoDTO(string maTin, string noiDung, DateTime ngayLap, string nVDangTin)
         {
             MaTin = maTin;
             NoiDung = noiDung;
@@ -30,7 +30,7 @@ namespace ECSystem.DTO
             NVDangTin = nVDangTin;
         }
 
-        public TinQuangCao(DataRow row)
+        public TinQuangCaoDTO(DataRow row)
         {
             MaTin = row["MaTin"].ToString();
             NoiDung = row["Noidung"].ToString();

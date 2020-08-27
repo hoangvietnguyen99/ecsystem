@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ECSystem.DTO
 {
-    public class MatHang
+    public class MatHangDTO
     {
         private string maMH;
 
@@ -25,7 +25,7 @@ namespace ECSystem.DTO
         public float GiaTien { get => giaTien; set => giaTien = value; }
         public int SLTon { get => sLTon; set => sLTon = value; }
 
-        public MatHang(DataRow row)
+        public MatHangDTO(DataRow row)
         {
             MaMH = row["MaMH"].ToString();
             TenMH = row["TenMH"].ToString();
@@ -34,7 +34,7 @@ namespace ECSystem.DTO
             LoaiHang = row["LoaiHang"].ToString();
         }
 
-        public MatHang(string loaiHang, string maMH, string tenMH, float giaTien, int sLTon)
+        public MatHangDTO(string loaiHang, string maMH, string tenMH, float giaTien, int sLTon)
         {
             LoaiHang = loaiHang;
             MaMH = maMH;

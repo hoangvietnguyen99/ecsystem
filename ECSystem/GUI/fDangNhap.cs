@@ -12,27 +12,13 @@ using ECSystem.DTO;
 using MaterialSkin;
 using MaterialSkin.Controls;
 
-namespace ECSystem
+namespace ECSystem.GUI
 {
-    public partial class fDangNhap : MaterialForm
+    public partial class fDangNhap : fMaterialSkin
     {
         public fDangNhap()
         {
             InitializeComponent();
-
-            var materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-        }
-
-        private void formDangNhap_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MaterialMessageBox.Show(this, "Bạn có chắc muốn thoát không?", "Thoát chương trình", MessageBoxButtons.OKCancel) != DialogResult.OK)
-            {
-                e.Cancel = true;
-            }
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
@@ -40,30 +26,30 @@ namespace ECSystem
             string username = textboxUsername.Text;
             string password = textBoxPassword.Text;
 
-            NhanVien nv = GetNhanVien(username);
+            NhanVienDTO nv = GetNhanVien(username);
 
             if (nv != null && nv.Password == password)
             {
-                if (nv.ChucVu == "Nhập hàng")
+                if (nv.ChucVu == "Mặt hàng")
                 {
-                    fQuanLyMatHang form = new fQuanLyMatHang();
-                    this.Hide();
+                    fQuanLyMatHang form = new fQuanLyMatHang(nv.MaNV);  
+                    Hide();
                     form.ShowDialog();
-                    this.Show();
+                    Show();
                 }
-                else if (nv.ChucVu == "Bán hàng")
+                if (nv.ChucVu == "Quản lý")
                 {
-                    fBanHang form = new fBanHang();
-                    this.Hide();
+                    fQuanLy form = new fQuanLy(nv.MaNV);
+                    Hide();
                     form.ShowDialog();
-                    this.Show();
+                    Show();
                 }
-                else if (nv.ChucVu == "Quản lý quảng cáo")
+                else if (nv.ChucVu == "Quảng cáo")
                 {
                     fQuanLyQuangCao form = new fQuanLyQuangCao(nv);
-                    this.Hide();
+                    Hide();
                     form.ShowDialog();
-                    this.Show();
+                    Show();
                 }
                 else
                 {
@@ -76,14 +62,22 @@ namespace ECSystem
             }
         }
 
-        private NhanVien GetNhanVien(string username)
+        private NhanVienDTO GetNhanVien(string username)
         {
             return NhanVienDAO.Instance.GetNhanVien(username);
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
+        }
+
+        private void fDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MaterialMessageBox.Show(this, "Đồng ý thoát chương trình?", "Cảnh báo", MessageBoxButtons.OKCancel) != DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }
