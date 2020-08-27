@@ -1,4 +1,4 @@
-﻿namespace ECSystem
+﻿namespace ECSystem.GUI
 {
     partial class fDangNhap
     {
@@ -29,63 +29,38 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textboxUsername = new MaterialSkin.Controls.MaterialTextBox();
-            this.textBoxPassword = new MaterialSkin.Controls.MaterialTextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonExit = new MaterialSkin.Controls.MaterialButton();
             this.buttonLogin = new MaterialSkin.Controls.MaterialButton();
+            this.textBoxPassword = new MaterialSkin.Controls.MaterialTextBox();
+            this.textboxUsername = new MaterialSkin.Controls.MaterialTextBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Controls.Add(this.textBoxPassword);
             this.panel1.Controls.Add(this.textboxUsername);
+            this.panel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel1.Location = new System.Drawing.Point(12, 70);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(376, 168);
             this.panel1.TabIndex = 0;
             // 
-            // textboxUsername
-            // 
-            this.textboxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textboxUsername.Depth = 0;
-            this.textboxUsername.Font = new System.Drawing.Font("Roboto", 12F);
-            this.textboxUsername.Hint = "Tên đăng nhập";
-            this.textboxUsername.Location = new System.Drawing.Point(3, 3);
-            this.textboxUsername.MaxLength = 50;
-            this.textboxUsername.MouseState = MaterialSkin.MouseState.OUT;
-            this.textboxUsername.Multiline = false;
-            this.textboxUsername.Name = "textboxUsername";
-            this.textboxUsername.Size = new System.Drawing.Size(370, 50);
-            this.textboxUsername.TabIndex = 0;
-            this.textboxUsername.Text = "";
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPassword.Depth = 0;
-            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBoxPassword.Hint = "Mật khẩu";
-            this.textBoxPassword.Location = new System.Drawing.Point(3, 59);
-            this.textBoxPassword.MaxLength = 50;
-            this.textBoxPassword.MouseState = MaterialSkin.MouseState.OUT;
-            this.textBoxPassword.Multiline = false;
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Password = true;
-            this.textBoxPassword.Size = new System.Drawing.Size(370, 50);
-            this.textBoxPassword.TabIndex = 1;
-            this.textBoxPassword.Text = "";
-            // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.54054F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.45946F));
             this.tableLayoutPanel1.Controls.Add(this.buttonExit, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttonLogin, 1, 0);
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 115);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -97,9 +72,11 @@
             // buttonExit
             // 
             this.buttonExit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.buttonExit.Depth = 0;
             this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonExit.DrawShadows = true;
+            this.buttonExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonExit.HighEmphasis = true;
             this.buttonExit.Icon = null;
             this.buttonExit.Location = new System.Drawing.Point(298, 6);
@@ -111,14 +88,16 @@
             this.buttonExit.Text = "Thoát";
             this.buttonExit.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.buttonExit.UseAccentColor = false;
-            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonLogin
             // 
             this.buttonLogin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.buttonLogin.Depth = 0;
             this.buttonLogin.DrawShadows = true;
+            this.buttonLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonLogin.HighEmphasis = true;
             this.buttonLogin.Icon = null;
             this.buttonLogin.Location = new System.Drawing.Point(185, 6);
@@ -130,10 +109,45 @@
             this.buttonLogin.Text = "Đăng nhập";
             this.buttonLogin.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.buttonLogin.UseAccentColor = false;
-            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-            // formDangNhap
+            // textBoxPassword
+            // 
+            this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPassword.Depth = 0;
+            this.textBoxPassword.Font = new System.Drawing.Font("Roboto", 12F);
+            this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.textBoxPassword.Hint = "Mật khẩu";
+            this.textBoxPassword.Location = new System.Drawing.Point(3, 59);
+            this.textBoxPassword.MaxLength = 50;
+            this.textBoxPassword.MouseState = MaterialSkin.MouseState.OUT;
+            this.textBoxPassword.Multiline = false;
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Password = true;
+            this.textBoxPassword.Size = new System.Drawing.Size(370, 50);
+            this.textBoxPassword.TabIndex = 1;
+            this.textBoxPassword.Text = "";
+            // 
+            // textboxUsername
+            // 
+            this.textboxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.textboxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textboxUsername.Depth = 0;
+            this.textboxUsername.Font = new System.Drawing.Font("Roboto", 12F);
+            this.textboxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.textboxUsername.Hint = "Tên đăng nhập";
+            this.textboxUsername.Location = new System.Drawing.Point(3, 3);
+            this.textboxUsername.MaxLength = 50;
+            this.textboxUsername.MouseState = MaterialSkin.MouseState.OUT;
+            this.textboxUsername.Multiline = false;
+            this.textboxUsername.Name = "textboxUsername";
+            this.textboxUsername.Size = new System.Drawing.Size(370, 50);
+            this.textboxUsername.TabIndex = 0;
+            this.textboxUsername.Text = "";
+            // 
+            // fDangNhap
             // 
             this.AcceptButton = this.buttonLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,11 +157,11 @@
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "formDangNhap";
+            this.Name = "fDangNhap";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formDangNhap_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fDangNhap_FormClosing);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

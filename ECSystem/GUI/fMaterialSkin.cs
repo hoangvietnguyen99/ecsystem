@@ -11,11 +11,11 @@ using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
 
-namespace ECSystem
+namespace ECSystem.GUI
 {
-    public partial class fNhapHang : MaterialForm
+    public partial class fMaterialSkin : MaterialForm
     {
-        public fNhapHang()
+        public fMaterialSkin()
         {
             InitializeComponent();
 

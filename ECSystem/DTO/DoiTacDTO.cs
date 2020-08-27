@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ECSystem.DTO
 {
-    public class DoiTac
+    public class DoiTacDTO
     {
         private string maDoiTac;
 
@@ -19,25 +19,25 @@ namespace ECSystem.DTO
 
         private string danhGia;
 
-        private int soLanDanhGia;
+        private int soLanGiaHan;
 
-        public DoiTac(string maDoiTac, string tenDoiTac, string diaChi, string danhGia, int soLanDanhGia, string sDT)
+        public DoiTacDTO(string maDoiTac, string tenDoiTac, string diaChi, string danhGia, int soLanDanhGia, string sDT)
         {
             MaDoiTac = maDoiTac;
             TenDoiTac = tenDoiTac;
             DiaChi = diaChi;
             DanhGia = danhGia;
-            SoLanDanhGia = soLanDanhGia;
+            SoLanGiaHan = soLanDanhGia;
             SDT = sDT;
         }
 
-        public DoiTac(DataRow row)
+        public DoiTacDTO(DataRow row)
         {
             MaDoiTac = row["MaDoiTac"].ToString();
             TenDoiTac = row["TenDoiTac"].ToString();
             DiaChi = row["DiaChi"].ToString();
             DanhGia = row["DanhGia"].ToString();
-            SoLanDanhGia = (int)row["SoLanDanhGia"];
+            SoLanGiaHan = (int)row["SoLanGiaHan"];
             SDT = row["SDT"].ToString();
         }
 
@@ -45,7 +45,7 @@ namespace ECSystem.DTO
         public string TenDoiTac { get => tenDoiTac; set => tenDoiTac = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
         public string DanhGia { get => danhGia; set => danhGia = value; }
-        public int SoLanDanhGia { get => soLanDanhGia; set => soLanDanhGia = value; }
         public string SDT { get => sDT; set => sDT = value; }
+        public int SoLanGiaHan { get => soLanGiaHan; set => soLanGiaHan = value; }
     }
 }

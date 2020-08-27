@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ECSystem.DTO
 {
-    public class NhanVien
+    public class NhanVienDTO
     {
         private string maNV;
 
@@ -21,7 +21,7 @@ namespace ECSystem.DTO
 
         private string password;
 
-        public NhanVien(string maNV, string tenNV, string diaChi, string sDT, string chucVu, string password)
+        public NhanVienDTO(string maNV, string tenNV, string diaChi, string sDT, string chucVu, string password)
         {
             MaNV = maNV;
             TenNV = tenNV;
@@ -31,7 +31,7 @@ namespace ECSystem.DTO
             Password = password;
         }
 
-        public NhanVien(DataRow row)
+        public NhanVienDTO(DataRow row)
         {
             MaNV = row["MaNV"].ToString();
             TenNV = row["TenNV"].ToString();

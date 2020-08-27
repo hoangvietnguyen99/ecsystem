@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ECSystem.DTO
 {
-    public class NhaCungCap
+    public class NhaCungCapDTO
     {
         private string maNCC;
 
@@ -17,7 +17,7 @@ namespace ECSystem.DTO
 
         private string sDT;
 
-        public NhaCungCap(string maNCC, string tenNCC, string diaChi, string sDT)
+        public NhaCungCapDTO(string maNCC, string tenNCC, string diaChi, string sDT)
         {
             MaNCC = maNCC;
             TenNCC = tenNCC;
@@ -25,7 +25,7 @@ namespace ECSystem.DTO
             SDT = sDT;
         }
 
-        public NhaCungCap(DataRow row)
+        public NhaCungCapDTO(DataRow row)
         {
             MaNCC = row["MaNCC"].ToString();
             TenNCC = row["TenNCC"].ToString();

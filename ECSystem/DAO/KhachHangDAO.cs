@@ -8,23 +8,23 @@ using System.Threading.Tasks;
 
 namespace ECSystem.DAO
 {
-    public class DoiTacDAO
+    public class KhachHangDAO
     {
-        private DoiTacDAO() { }
+        private KhachHangDAO() { }
 
-        private static DoiTacDAO instance;
+        private static KhachHangDAO instance;
 
-        public static DoiTacDAO Instance 
+        public static KhachHangDAO Instance 
         {
-            get { if (instance == null) instance = new DoiTacDAO(); return instance; }
+            get { if (instance == null) instance = new KhachHangDAO(); return instance; }
             private set => instance = value;
         }
 
-        public DoiTacDTO LayDoiTac(string maKH)
+        public KhachHangDTO LayKhachHang(string maKH)
         {
-            string query = "USP_XemDoiTac @MaKH";
+            string query = "USP_XemKhachHang @MaKH";
 
-            DoiTacDTO dt = null;
+            KhachHangDTO kh = null;
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { maKH });
 
@@ -32,10 +32,10 @@ namespace ECSystem.DAO
             {
                 DataRow row = data.Rows[0];
 
-                dt = new DoiTacDTO(row);
+                kh = new KhachHangDTO(row);
             }
 
-            return dt;
+            return kh;
         }
     }
 }
