@@ -38,6 +38,8 @@
             this.materialMultiLineTextBox1 = new MaterialSkin.Controls.MaterialMultiLineTextBox();
             this.tbMaNCC = new MaterialSkin.Controls.MaterialTextBox();
             this.tb = new MaterialSkin.Controls.MaterialTextBox();
+            this.btXemCT = new MaterialSkin.Controls.MaterialButton();
+            this.btDuyet = new MaterialSkin.Controls.MaterialButton();
             this.tcQuanLy.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -48,6 +50,7 @@
             this.tcQuanLy.Controls.Add(this.tabPage1);
             this.tcQuanLy.Controls.Add(this.tpNhanVien);
             this.tcQuanLy.Depth = 0;
+            this.tcQuanLy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.tcQuanLy.Location = new System.Drawing.Point(2, 64);
             this.tcQuanLy.MouseState = MaterialSkin.MouseState.HOVER;
             this.tcQuanLy.Name = "tcQuanLy";
@@ -57,6 +60,9 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.tabPage1.Controls.Add(this.btDuyet);
+            this.tabPage1.Controls.Add(this.btXemCT);
             this.tabPage1.Controls.Add(this.tb);
             this.tabPage1.Controls.Add(this.tbMaNCC);
             this.tabPage1.Controls.Add(this.materialMultiLineTextBox1);
@@ -70,17 +76,16 @@
             this.tabPage1.Size = new System.Drawing.Size(790, 361);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Đơn nhập hàng";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tpNhanVien
             // 
+            this.tpNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.tpNhanVien.Location = new System.Drawing.Point(4, 22);
             this.tpNhanVien.Name = "tpNhanVien";
             this.tpNhanVien.Padding = new System.Windows.Forms.Padding(3);
             this.tpNhanVien.Size = new System.Drawing.Size(790, 380);
             this.tpNhanVien.TabIndex = 1;
             this.tpNhanVien.Text = "Nhân viên";
-            this.tpNhanVien.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -93,7 +98,9 @@
             // radiobtChuaDuocDuyet
             // 
             this.radiobtChuaDuocDuyet.AutoSize = true;
+            this.radiobtChuaDuocDuyet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.radiobtChuaDuocDuyet.Depth = 0;
+            this.radiobtChuaDuocDuyet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.radiobtChuaDuocDuyet.Location = new System.Drawing.Point(482, 6);
             this.radiobtChuaDuocDuyet.Margin = new System.Windows.Forms.Padding(0);
             this.radiobtChuaDuocDuyet.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -104,13 +111,15 @@
             this.radiobtChuaDuocDuyet.TabIndex = 1;
             this.radiobtChuaDuocDuyet.TabStop = true;
             this.radiobtChuaDuocDuyet.Text = "Chưa được duyệt";
-            this.radiobtChuaDuocDuyet.UseVisualStyleBackColor = true;
+            this.radiobtChuaDuocDuyet.UseVisualStyleBackColor = false;
             // 
             // tbMaDon
             // 
+            this.tbMaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.tbMaDon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbMaDon.Depth = 0;
             this.tbMaDon.Font = new System.Drawing.Font("Roboto", 12F);
+            this.tbMaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.tbMaDon.Hint = "Mã đơn";
             this.tbMaDon.Location = new System.Drawing.Point(482, 46);
             this.tbMaDon.MaxLength = 50;
@@ -124,9 +133,11 @@
             // 
             // tbNgayLapDon
             // 
+            this.tbNgayLapDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.tbNgayLapDon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbNgayLapDon.Depth = 0;
             this.tbNgayLapDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tbNgayLapDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.tbNgayLapDon.Hint = "Ngày lập đơn";
             this.tbNgayLapDon.Location = new System.Drawing.Point(588, 46);
             this.tbNgayLapDon.MaxLength = 50;
@@ -156,9 +167,11 @@
             // 
             // tbMaNCC
             // 
+            this.tbMaNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.tbMaNCC.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbMaNCC.Depth = 0;
             this.tbMaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tbMaNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.tbMaNCC.Hint = "Mã NCC";
             this.tbMaNCC.Location = new System.Drawing.Point(482, 168);
             this.tbMaNCC.MaxLength = 50;
@@ -172,9 +185,11 @@
             // 
             // tb
             // 
+            this.tb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb.Depth = 0;
             this.tb.Font = new System.Drawing.Font("Roboto", 12F);
+            this.tb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.tb.Hint = "Tổng tiền";
             this.tb.Location = new System.Drawing.Point(588, 169);
             this.tb.MaxLength = 50;
@@ -185,6 +200,47 @@
             this.tb.Size = new System.Drawing.Size(194, 50);
             this.tb.TabIndex = 6;
             this.tb.Text = "";
+            // 
+            // btXemCT
+            // 
+            this.btXemCT.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btXemCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btXemCT.Depth = 0;
+            this.btXemCT.DrawShadows = true;
+            this.btXemCT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btXemCT.HighEmphasis = true;
+            this.btXemCT.Icon = null;
+            this.btXemCT.Location = new System.Drawing.Point(577, 313);
+            this.btXemCT.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btXemCT.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btXemCT.Name = "btXemCT";
+            this.btXemCT.Size = new System.Drawing.Size(114, 36);
+            this.btXemCT.TabIndex = 7;
+            this.btXemCT.Text = "Xem chi tiết";
+            this.btXemCT.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btXemCT.UseAccentColor = false;
+            this.btXemCT.UseVisualStyleBackColor = false;
+            // 
+            // btDuyet
+            // 
+            this.btDuyet.AutoSize = false;
+            this.btDuyet.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btDuyet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btDuyet.Depth = 0;
+            this.btDuyet.DrawShadows = true;
+            this.btDuyet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btDuyet.HighEmphasis = true;
+            this.btDuyet.Icon = null;
+            this.btDuyet.Location = new System.Drawing.Point(643, 6);
+            this.btDuyet.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btDuyet.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btDuyet.Name = "btDuyet";
+            this.btDuyet.Size = new System.Drawing.Size(138, 37);
+            this.btDuyet.TabIndex = 8;
+            this.btDuyet.Text = "Duyệt";
+            this.btDuyet.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btDuyet.UseAccentColor = false;
+            this.btDuyet.UseVisualStyleBackColor = false;
             // 
             // fQuanLy
             // 
@@ -219,5 +275,7 @@
         private MaterialSkin.Controls.MaterialTextBox tbMaDon;
         private MaterialSkin.Controls.MaterialRadioButton radiobtChuaDuocDuyet;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private MaterialSkin.Controls.MaterialButton btDuyet;
+        private MaterialSkin.Controls.MaterialButton btXemCT;
     }
 }
