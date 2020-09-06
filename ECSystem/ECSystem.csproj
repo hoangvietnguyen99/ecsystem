@@ -50,28 +50,76 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\DoiTacBUS.cs" />
+    <Compile Include="BUS\DonNhapHangBUS.cs" />
     <Compile Include="BUS\KhachHangBUS.cs" />
     <Compile Include="BUS\LoaiHangBUS.cs" />
+    <Compile Include="BUS\MatHangBUS.cs" />
+    <Compile Include="BUS\NCCBUS.cs" />
     <Compile Include="BUS\TinQuangCaoBUS.cs" />
     <Compile Include="BUS\TinQuangCaoDoiTacBUS.cs" />
     <Compile Include="BUS\TinQuangCaoKhachHangBUS.cs" />
+    <Compile Include="DAO\CT_HoaDonDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DoiTacDAO.cs" />
+    <Compile Include="DAO\DonNhapHangDAO.cs" />
+    <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\KhachHangDAO.cs" />
     <Compile Include="DAO\LoaiHangDAO.cs" />
+    <Compile Include="DAO\MatHangDAO.cs" />
+    <Compile Include="DAO\NCCDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\TinQuangCaoDAO.cs" />
     <Compile Include="DAO\TinQuangCaoDoiTacDAO.cs" />
     <Compile Include="DAO\TinQuangCaoKhachHangDAO.cs" />
+    <Compile Include="DTO\CT_HoaDonDTO.cs" />
     <Compile Include="DTO\DoiTacDTO.cs" />
+    <Compile Include="DTO\DonNhapHangDTO.cs" />
+    <Compile Include="DTO\HoaDonDTO.cs" />
     <Compile Include="DTO\KhachHangDTO.cs" />
     <Compile Include="DTO\LoaiHangDTO.cs" />
     <Compile Include="DTO\MatHangDTO.cs" />
+    <Compile Include="DTO\NCCDTO.cs" />
     <Compile Include="DTO\NhaCungCapDTO.cs" />
     <Compile Include="DTO\NhanVienDTO.cs" />
     <Compile Include="DTO\TinQuangCaoDoiTacDTO.cs" />
     <Compile Include="DTO\TinQuangCaoDTO.cs" />
     <Compile Include="DTO\TinQuangCaoKhachHangDTO.cs" />
+    <Compile Include="GUI\fChiTietDNH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fChiTietDNH.Designer.cs">
+      <DependentUpon>fChiTietDNH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fChiTietSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fChiTietSanPham.Designer.cs">
+      <DependentUpon>fChiTietSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fDangNhap.Designer.cs">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fDatHang.Designer.cs">
+      <DependentUpon>fDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fMaterialSkin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fMaterialSkin.Designer.cs">
+      <DependentUpon>fMaterialSkin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fNCC.Designer.cs">
+      <DependentUpon>fNCC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\fNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,12 +137,6 @@
     </Compile>
     <Compile Include="GUI\fQuanLyMatHang.Designer.cs">
       <DependentUpon>fQuanLyMatHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\fDangNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\fDangNhap.Designer.cs">
-      <DependentUpon>fDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\fQuanLyQuangCao.cs">
       <SubType>Form</SubType>
@@ -114,15 +156,36 @@
     <Compile Include="GUI\fThemKhachHang.Designer.cs">
       <DependentUpon>fThemKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\fMaterialSkin.cs">
+    <Compile Include="GUI\fThemLoaiHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\fMaterialSkin.Designer.cs">
-      <DependentUpon>fMaterialSkin.cs</DependentUpon>
+    <Compile Include="GUI\fThemLoaiHang.Designer.cs">
+      <DependentUpon>fThemLoaiHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTheoDoiDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTheoDoiDonHang.Designer.cs">
+      <DependentUpon>fTheoDoiDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTrangBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTrangBanHang.Designer.cs">
+      <DependentUpon>fTrangBanHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\fNhapHang.resx">
+    <EmbeddedResource Include="GUI\fChiTietDNH.resx">
+      <DependentUpon>fChiTietDNH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fDangNhap.resx">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fNCC.resx">
+      <DependentUpon>fNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FNhapHang.resx">
       <DependentUpon>fNhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fQuanLy.resx">
@@ -130,9 +193,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fQuanLyMatHang.resx">
       <DependentUpon>fQuanLyMatHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\fDangNhap.resx">
-      <DependentUpon>fDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fQuanLyQuangCao.resx">
       <DependentUpon>fQuanLyQuangCao.cs</DependentUpon>
@@ -142,6 +202,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fThemKhachHang.resx">
       <DependentUpon>fThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fThemLoaiHang.resx">
+      <DependentUpon>fThemLoaiHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fTrangBanHang.resx">
+      <DependentUpon>fTrangBanHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -166,6 +232,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Icon1.ico" />
+    <Content Include="Resources\logo_shop_online.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

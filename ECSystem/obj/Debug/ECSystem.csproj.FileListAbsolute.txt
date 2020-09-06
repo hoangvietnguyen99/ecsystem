@@ -1,29 +1,42 @@
-D:\Project\C#\Winform\ECSystem\ECSystem\bin\Debug\ECSystem.exe
-D:\Project\C#\Winform\ECSystem\ECSystem\bin\Debug\MaterialSkin.dll
-C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\bin\Debug\ECSystem.exe.config
-C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\bin\Debug\ECSystem.exe
-C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\bin\Debug\ECSystem.pdb
-C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\bin\Debug\MaterialSkin.dll
-C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.csprojAssemblyReference.cache
-C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.Properties.Resources.resources
-C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.csproj.GenerateResource.cache
-C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.csproj.CoreCompileInputs.cache
-C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.csproj.CopyComplete
-C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.exe
-C:\Users\ASUS\Source\Repos\ecsystem\ECSystem\obj\Debug\ECSystem.pdb
-D:\Project\C#\Winform\ecsystem\ECSystem\bin\Debug\ECSystem.exe.config
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.GUI.fDangNhap.resources
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.GUI.fQuanLyMatHang.resources
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.GUI.fQuanLyQuangCao.resources
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.GUI.fThemDoiTac.resources
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.GUI.fThemKhachHang.resources
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.Properties.Resources.resources
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.csproj.GenerateResource.cache
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.csproj.CoreCompileInputs.cache
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.csproj.CopyComplete
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.exe
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.pdb
-D:\Project\C#\Winform\ecsystem\ECSystem\bin\Debug\ECSystem.pdb
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.csprojAssemblyReference.cache
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.GUI.fNhapHang.resources
-D:\Project\C#\Winform\ecsystem\ECSystem\obj\Debug\ECSystem.GUI.fQuanLy.resources
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\bin\Debug\ECSystem.exe.config
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\bin\Debug\ECSystem.exe
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\bin\Debug\ECSystem.pdb
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\bin\Debug\MaterialSkin.dll
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.GUI.fQuanLy.resources
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.GUI.fQuanLyMatHang.resources
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.GUI.fQuanLyQuangCao.resources
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.GUI.fThemDoiTac.resources
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.GUI.fThemKhachHang.resources
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.GUI.fThemLoaiHang.resources
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.exe
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.pdb
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.GUI.fDangNhap.resources
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.GUI.fNhapHang.resources
+C:\Users\ASUS\Desktop\Đô Án PTTK THỰC HÀNH\Quản Lý Quảng Cáo _ Quản Lý Nhập Hàng\ECSystem\obj\Debug\ECSystem.GUI.fTrangBanHang.resources
+D:\Project\Shobee\ECSystem\bin\Debug\ECSystem.exe.config
+D:\Project\Shobee\ECSystem\bin\Debug\ECSystem.exe
+D:\Project\Shobee\ECSystem\bin\Debug\ECSystem.pdb
+D:\Project\Shobee\ECSystem\bin\Debug\MaterialSkin.dll
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.csprojAssemblyReference.cache
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.GUI.fDangNhap.resources
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.GUI.fNhapHang.resources
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.GUI.fQuanLy.resources
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.GUI.fQuanLyMatHang.resources
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.GUI.fQuanLyQuangCao.resources
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.GUI.fThemDoiTac.resources
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.GUI.fThemKhachHang.resources
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.GUI.fThemLoaiHang.resources
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.GUI.fTrangBanHang.resources
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.Properties.Resources.resources
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.csproj.GenerateResource.cache
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.csproj.CoreCompileInputs.cache
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.csproj.CopyComplete
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.exe
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.pdb
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.GUI.fChiTietDNH.resources
+D:\Project\Shobee\ECSystem\obj\Debug\ECSystem.GUI.fNCC.resources

@@ -40,7 +40,7 @@ namespace ECSystem.DTO
             MaDoiTac = row["MaDoiTac"].ToString();
             NgayKyHD = DateTime.Parse(row["NgayKyHD"].ToString());
             ThoiGianQC = (int)row["ThoiGianQC"];
-            ThongTinViTriDang = row["MaTin"].ToString();
+            ThongTinViTriDang = row["ThongTinViTriDang"].ToString();
         }
     }
 }

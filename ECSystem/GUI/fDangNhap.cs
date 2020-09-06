@@ -32,12 +32,12 @@ namespace ECSystem.GUI
             {
                 if (nv.ChucVu == "Mặt hàng")
                 {
-                    fQuanLyMatHang form = new fQuanLyMatHang(nv.MaNV);  
+                    fQuanLyMatHang form = new fQuanLyMatHang(nv.MaNV);
                     Hide();
                     form.ShowDialog();
                     Show();
                 }
-                if (nv.ChucVu == "Quản lý")
+                else if (nv.ChucVu == "Quản lý")
                 {
                     fQuanLy form = new fQuanLy(nv.MaNV);
                     Hide();
@@ -78,6 +78,34 @@ namespace ECSystem.GUI
             {
                 e.Cancel = true;
             }
+        }
+
+        private void KhachHangLogin_Button_Click(object sender, EventArgs e)
+        {
+            string passWord = textBoxPassword.Text;
+            string userName = textboxUsername.Text;
+            if (Login_KhachHang(userName, passWord))
+            {
+                textBoxPassword.Clear();
+                string query = "EXEC USP_KhachHangLogin @userName = N'" + userName + "',  @passWord ='" + passWord + "'";
+                DataTable kq = DataProvider.Instance.ExecuteQuery(query);
+                DataRow row = kq.Rows[0];
+                string maKh = row["MaKH"].ToString();
+                string tenKh = row["TenKH"].ToString();
+                fTrangBanHang form = new fTrangBanHang(maKh, tenKh);
+                this.Hide();
+                form.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu!");
+            }
+        }
+
+        bool Login_KhachHang(string userName, string passWord)
+        {
+            return KhachHangDAO.Instance.Login(userName, passWord);
         }
     }
 }
