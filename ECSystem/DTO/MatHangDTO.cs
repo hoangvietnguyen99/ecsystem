@@ -13,28 +13,33 @@ namespace ECSystem.DTO
 
         private string tenMH;
 
-        private float giaTien;
+        private double giaTien;
 
         private int sLTon;
 
         private string loaiHang;
 
+        private string img;
+
+        public string Img { get => img; set => img = value; }
+
         public string LoaiHang { get => loaiHang; set => loaiHang = value; }
         public string MaMH { get => maMH; set => maMH = value; }
         public string TenMH { get => tenMH; set => tenMH = value; }
-        public float GiaTien { get => giaTien; set => giaTien = value; }
+        public double GiaTien { get => giaTien; set => giaTien = value; }
         public int SLTon { get => sLTon; set => sLTon = value; }
 
         public MatHangDTO(DataRow row)
         {
             MaMH = row["MaMH"].ToString();
             TenMH = row["TenMH"].ToString();
-            GiaTien = (float)row["GiaTien"];
+            GiaTien = (double)row["GiaTien"];
             SLTon = (int)row["SLTon"];
+            Img = row["HinhAnh"].ToString();
             LoaiHang = row["LoaiHang"].ToString();
         }
 
-        public MatHangDTO(string loaiHang, string maMH, string tenMH, float giaTien, int sLTon)
+        public MatHangDTO(string loaiHang, string maMH, string tenMH, double giaTien, int sLTon)
         {
             LoaiHang = loaiHang;
             MaMH = maMH;
@@ -42,7 +47,5 @@ namespace ECSystem.DTO
             GiaTien = giaTien;
             SLTon = sLTon;
         }
-
-
     }
 }

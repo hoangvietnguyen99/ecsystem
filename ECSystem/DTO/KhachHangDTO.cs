@@ -19,6 +19,8 @@ namespace ECSystem.DTO
 
         private string sDT;
 
+        private string username;
+
         private string password;
 
         public string MaKH { get => maKH; set => maKH = value; }
@@ -26,6 +28,8 @@ namespace ECSystem.DTO
         public string Email { get => email; set => email = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
         public string SDT { get => sDT; set => sDT = value; }
+        public string Username { get => username; set => username = value; }
+
         public string Password { get => password; set => password = value; }
 
         public KhachHangDTO(string maKH, string tenKH, string email, string diaChi, string sDT, string password)
@@ -35,6 +39,7 @@ namespace ECSystem.DTO
             Email = email;
             DiaChi = diaChi;
             SDT = sDT;
+            Username = username;
             Password = password;
         }
 
@@ -45,6 +50,7 @@ namespace ECSystem.DTO
             Email = row["Email"].ToString();
             DiaChi = row["DiaChi"].ToString();
             SDT = row["SDT"].ToString();
+            Username = row["Username"].ToString();
             Password = row["Password"].ToString();
         }
     }

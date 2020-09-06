@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.KhachHangLogin_Button = new MaterialSkin.Controls.MaterialButton();
             this.buttonExit = new MaterialSkin.Controls.MaterialButton();
             this.buttonLogin = new MaterialSkin.Controls.MaterialButton();
             this.textBoxPassword = new MaterialSkin.Controls.MaterialTextBox();
@@ -54,20 +55,43 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.54054F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.45946F));
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.61064F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.38936F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel1.Controls.Add(this.KhachHangLogin_Button, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttonExit, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.buttonLogin, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.buttonLogin, 2, 0);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 115);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(370, 50);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // KhachHangLogin_Button
+            // 
+            this.KhachHangLogin_Button.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.KhachHangLogin_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.KhachHangLogin_Button.Depth = 0;
+            this.KhachHangLogin_Button.DrawShadows = true;
+            this.KhachHangLogin_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.KhachHangLogin_Button.HighEmphasis = true;
+            this.KhachHangLogin_Button.Icon = null;
+            this.KhachHangLogin_Button.Location = new System.Drawing.Point(174, 6);
+            this.KhachHangLogin_Button.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.KhachHangLogin_Button.MouseState = MaterialSkin.MouseState.HOVER;
+            this.KhachHangLogin_Button.Name = "KhachHangLogin_Button";
+            this.KhachHangLogin_Button.Size = new System.Drawing.Size(116, 36);
+            this.KhachHangLogin_Button.TabIndex = 2;
+            this.KhachHangLogin_Button.Text = "Khách Hàng";
+            this.KhachHangLogin_Button.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.KhachHangLogin_Button.UseAccentColor = false;
+            this.KhachHangLogin_Button.UseVisualStyleBackColor = false;
+            this.KhachHangLogin_Button.Click += new System.EventHandler(this.KhachHangLogin_Button_Click);
             // 
             // buttonExit
             // 
@@ -100,13 +124,13 @@
             this.buttonLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonLogin.HighEmphasis = true;
             this.buttonLogin.Icon = null;
-            this.buttonLogin.Location = new System.Drawing.Point(185, 6);
+            this.buttonLogin.Location = new System.Drawing.Point(4, 6);
             this.buttonLogin.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.buttonLogin.MouseState = MaterialSkin.MouseState.HOVER;
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(105, 36);
+            this.buttonLogin.Size = new System.Drawing.Size(76, 36);
             this.buttonLogin.TabIndex = 0;
-            this.buttonLogin.Text = "Đăng nhập";
+            this.buttonLogin.Text = "Nhân Viên";
             this.buttonLogin.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.buttonLogin.UseAccentColor = false;
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -117,7 +141,7 @@
             this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPassword.Depth = 0;
-            this.textBoxPassword.Font = new System.Drawing.Font("Roboto", 12F);
+            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.textBoxPassword.Hint = "Mật khẩu";
             this.textBoxPassword.Location = new System.Drawing.Point(3, 59);
@@ -128,14 +152,14 @@
             this.textBoxPassword.Password = true;
             this.textBoxPassword.Size = new System.Drawing.Size(370, 50);
             this.textBoxPassword.TabIndex = 1;
-            this.textBoxPassword.Text = "";
+            this.textBoxPassword.Text = "1234";
             // 
             // textboxUsername
             // 
             this.textboxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.textboxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxUsername.Depth = 0;
-            this.textboxUsername.Font = new System.Drawing.Font("Roboto", 12F);
+            this.textboxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textboxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.textboxUsername.Hint = "Tên đăng nhập";
             this.textboxUsername.Location = new System.Drawing.Point(3, 3);
@@ -145,7 +169,7 @@
             this.textboxUsername.Name = "textboxUsername";
             this.textboxUsername.Size = new System.Drawing.Size(370, 50);
             this.textboxUsername.TabIndex = 0;
-            this.textboxUsername.Text = "";
+            this.textboxUsername.Text = "NV002";
             // 
             // fDangNhap
             // 
@@ -177,5 +201,6 @@
         private MaterialSkin.Controls.MaterialButton buttonLogin;
         private MaterialSkin.Controls.MaterialTextBox textBoxPassword;
         private MaterialSkin.Controls.MaterialTextBox textboxUsername;
+        private MaterialSkin.Controls.MaterialButton KhachHangLogin_Button;
     }
 }

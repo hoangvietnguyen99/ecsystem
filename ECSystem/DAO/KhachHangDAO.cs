@@ -37,5 +37,28 @@ namespace ECSystem.DAO
 
             return kh;
         }
+
+        public List<KhachHangDTO> LoadDSLoadKhachHang()
+        {
+            List<KhachHangDTO> khachHangList = new List<KhachHangDTO>();
+
+            DataTable data = DataProvider.Instance.ExecuteQuery("EXEC USP_LayDSKhachHang");
+
+            foreach (DataRow item in data.Rows)
+            {
+                KhachHangDTO khachhang = new KhachHangDTO(item);
+                khachHangList.Add(khachhang);
+            }
+            return khachHangList;
+        }
+
+        public bool Login(string userName, string passWord)
+        {
+            string query = "EXEC USP_KhachHangLogin @userName  = N'" + userName + "', @passWord = N'" + passWord + "'";
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+
+            return result.Rows.Count > 0;
+        }
     }
 }

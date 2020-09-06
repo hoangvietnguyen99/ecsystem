@@ -14,10 +14,24 @@ namespace ECSystem.DAO
 
         private static LoaiHangDAO instance;
 
-        public static LoaiHangDAO Instance 
+        public static LoaiHangDAO Instance
         {
             get { if (instance == null) instance = new LoaiHangDAO(); return instance; }
-            private set => instance = value; 
+            private set => instance = value;
+        }
+
+        public List<LoaiHangDTO> LoadDSLoadHang()
+        {
+            List<LoaiHangDTO> loaiHangList = new List<LoaiHangDTO>();
+
+            DataTable data = DataProvider.Instance.ExecuteQuery("EXEC USP_LayDSLoaiHang");
+
+            foreach (DataRow item in data.Rows)
+            {
+                LoaiHangDTO dsLoai = new LoaiHangDTO(item);
+                loaiHangList.Add(dsLoai);
+            }
+            return loaiHangList;
         }
 
         public List<string> LayDSTenLoaiHang()
@@ -37,6 +51,38 @@ namespace ECSystem.DAO
             }
 
             return ds;
+        }
+
+        public LoaiHangDTO LayLoaiHangTheoTen(string tenLH)
+        {
+            string query = "USP_LayLoaiHangTheoTen @tenLH";
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { tenLH });
+
+            if (data.Rows.Count > 0)
+            {
+                return new LoaiHangDTO(data.Rows[0]);
+            }
+
+            return null;
+        }
+
+        public int ThemLoaiHang(LoaiHangDTO lh)
+        {
+            string query = "USP_ThemLoaiHang @MaLH , @TenLH , @NVQuanLy";
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { lh.MaLH, lh.TenLH, lh.NhanVienQL });
+
+            return result;
+        }
+
+        public int XoaLoaiHang(string maLH)
+        {
+            string query = "USP_XoaLoaiHang @MaLH";
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maLH });
+
+            return result;
         }
     }
 }
